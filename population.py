@@ -51,7 +51,7 @@ class population:
         sorted_dict = []
         for i in range(0, len(self.colony)):
             sorted_dict.append((self.colony[i], self.colony[i].fitness_score))
-        sorted_dict.sort(cmp=lambda x, y: cmp(x[1], y[1]), reverse=True)
+        sorted_dict.sort(key=lambda x:x[1], reverse=True)
         colony_new = []
         for i in range(0, self.colony_size_allowed):
             chmsm = sorted_dict[i][0]

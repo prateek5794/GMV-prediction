@@ -85,5 +85,5 @@ predictions = []
 for i in range(0, len(test_data) - 1):
     predictions.append(predict(best_gene2, test_data[i], test_data[i + 1]))
 
-print predictions
+print(predictions)
 
